@@ -2,7 +2,7 @@
 
 选几个参数，出来一条能唱的简谱练习曲。小学音乐老师备课时用。
 
-**[点开就能用 →](https://xiaoshichang.donqui.me)** ｜ **[下载离线版](简谱练习曲生成器.html)**（约 800 KB，一个文件，双击即开）
+**[在线直接用 →](https://xiaoshichang.donqui.me)** ｜ **[下载生成页](简谱练习曲生成器.html)**（约 800 KB，一个文件，双击即开，断网也能生成和播放）
 
 ![生成页](assets/generator-page.png)
 
