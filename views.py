@@ -242,16 +242,24 @@ body{margin:0;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antia
 .n .dg .oct{position:absolute;left:50%;top:-9px;transform:translateX(-50%);
             width:4.5px;height:4.5px;border-radius:50%;background:currentColor}
 .n .dg .oct.low{top:auto;bottom:-9px}
+/* 带减时线的音符，低音点必须画在减时线**下面**——简谱记谱法的规定
+   （"少于四分音符的各种音符，低音点和倍低音点要写在减时线的下面"）。
+   顺手解决了重叠：两根线在数字下方 0–1.6px 与 5–6.6px，点原来落在 4.5–9px，
+   第二条线正好从点中间穿过（缩到正常大小根本看不出来）。
+   落到 10.5–15px 才干净——先写 -13px 时十六分那条线还擦着点 0.5px，
+   是全场景实测（488 个带横梁的低音音符）抓出来的，肉眼看不出、量得出来。
+   `.bot` 同时从 15px 加到 17px 兜住它。（用户 2026-09-29 指出重叠） */
+.n.l1 .dg .oct.low,.n.l2 .dg .oct.low{bottom:-15px}
 /* 下划线画在 .n 的整个盒子上（含左右 padding），不画在数字盒上：
    组内 gap:0，相邻两条线才能接成一条横梁。
    以前画在数字盒上、音符之间又有 5px padding，相邻八分下面成了两截短线、中间空 10px。 */
 /* 横梁线：**两端不要圆角**。线是逐音符画的、盒子相邻就接上，带圆角时每个接缝会露出
    一个"关节"，放大看像随手画的；方头对接才是一条连续的直线。（用户 2026-09-29 指出） */
-.n.l1::after,.n.l2::after{content:'';position:absolute;left:0;right:0;bottom:15px;
+.n.l1::after,.n.l2::after{content:'';position:absolute;left:0;right:0;bottom:17px;
                           height:1.6px;background:currentColor}
-.n.l2::before{content:'';position:absolute;left:0;right:0;bottom:10px;
+.n.l2::before{content:'';position:absolute;left:0;right:0;bottom:12px;
               height:1.6px;background:currentColor}
-.n .bot{height:15px}
+.n .bot{height:17px}
 .n .mid .dot{font-size:13px;vertical-align:-2px}
 .dash{opacity:.5;letter-spacing:-1px}
 

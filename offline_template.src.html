@@ -300,6 +300,10 @@
      原版只有上八度点、单下划线。生成器会产出低八度音（占 26%）与十六分音符，
      这两处不补的话，低音会画成不带点的音、十六分会画成和八分一样。 */
   .ng .oct.low{top:auto;bottom:-9.5px}
+  /* 带减时线的音符，低音点画在减时线**下面**（简谱记谱法）。不挪的话第二条线会穿过它：
+     两根线在数字下方 2.2–4.0px 与 5.8–7.6px，点原来落在 5.0–9.5px。
+     点会探出 .ng 的 padding box 约 8px，.ng 不裁切、下面那行谱也够远，视觉上没问题。 */
+  .ng.e8 .oct.low,.ng.e16 .oct.low{bottom:-14px}
   /* 同 .ng.e8::after：方头，不要圆角——否则十六分那两根线的每一段都带关节 */
   .ng.e16::after{
     content:"";position:absolute;left:0;right:0;bottom:2px;height:1.8px;
