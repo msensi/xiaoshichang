@@ -1,0 +1,13 @@
+{
+  "why": "自包含断言（页面里不许出现任何外部网址）的唯一例外清单。",
+  "why_detail": [
+    "署名许可要求随副本提供许可 URI，所以这两个网址会作为注释里的纯文本出现在产物里。",
+    "它们不产生任何网络请求，也不影响断网打开。",
+    "只放行这一串名单——其余任何 http 字样照样算违规。例外必须点名，不许把断言放宽成『允许 http』。",
+    "构建侧（build_site.py）和导出包校验侧（verify_export.cjs）读同一份，避免两边各维护一份而走散。"
+  ],
+  "urls": [
+    "https://opensource.org/license/mit",
+    "https://creativecommons.org/licenses/by/3.0/us/"
+  ]
+}

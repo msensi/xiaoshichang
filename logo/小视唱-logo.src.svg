@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254" role="img" aria-labelledby="logo-title logo-description">
+  <title id="logo-title">小试唱 Logo</title>
+  <desc id="logo-description">蓝色圆角方形内是白色纸带造型的 123，数字带浅蓝色翻折阴影，下方是一条圆端横线。</desc>
+  <defs>
+    <radialGradient id="blue-background" cx="50%" cy="42%" r="78%">
+      <stop offset="0" stop-color="#196DFF"/>
+      <stop offset="0.72" stop-color="#1368FD"/>
+      <stop offset="1" stop-color="#0F61F5"/>
+    </radialGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0.8" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FBFCFE"/>
+    </linearGradient>
+    <linearGradient id="one-fold" x1="294" y1="510" x2="344" y2="746" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A9D0F9"/>
+      <stop offset="0.42" stop-color="#D7EAFD"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="two-fold" x1="540" y1="667" x2="648" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A5CDF9"/>
+      <stop offset="0.65" stop-color="#DAEDFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="three-upper-fold" x1="977" y1="506" x2="1046" y2="575" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#CBE4FD"/>
+      <stop offset="0.68" stop-color="#A9D1FB"/>
+      <stop offset="1" stop-color="#E8F4FF"/>
+    </linearGradient>
+    <linearGradient id="three-lower-fold" x1="849" y1="745" x2="1007" y2="674" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EDF7FF"/>
+      <stop offset="0.6" stop-color="#B0D5FB"/>
+      <stop offset="1" stop-color="#DCEEFF"/>
+    </linearGradient>
+    <linearGradient id="bar-fill" x1="157" y1="807" x2="1092" y2="907" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.72" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E8F4FF"/>
+    </linearGradient>
+  </defs>
+
+  <g id="background">
+    <rect id="background-shape" width="1254" height="1254" rx="330" fill="url(#blue-background)"/>
+  </g>
+
+  <g id="number-1">
+    <path id="digit-1" fill="url(#paper)" d="M263 527 223 545C198 557 173 547 163 526 152 504 161 479 183 466L289 402C308 390 328 390 346 400 365 411 376 430 376 454V715C376 747 351 772 319 772 287 772 263 747 263 716Z"/>
+    <path id="digit-1-fold" fill="url(#one-fold)" d="M263 527 287 516C321 499 354 519 369 551 373 559 376 567 376 576V715C376 747 351 772 319 772 287 772 263 747 263 716Z"/>
+  </g>
+
+  <g id="number-2">
+    <path id="digit-2" fill="url(#paper)" d="M430 500C443 437 508 391 585 391 671 391 730 443 730 513 730 579 683 618 608 673H711C738 673 760 694 760 720 760 747 739 767 712 767H488C460 767 440 747 440 720 440 696 452 678 473 657L583 572C617 546 635 528 635 512 635 493 615 482 586 482 557 482 536 495 522 522 512 540 492 548 474 548 445 548 424 528 430 500Z"/>
+    <path id="digit-2-fold" fill="url(#two-fold)" d="M635 515C631 547 608 574 576 601 544 629 526 648 527 658 528 669 537 673 551 673H608L674 623C649 596 637 560 635 515Z"/>
+  </g>
+
+  <g id="number-3">
+    <path id="digit-3" fill="url(#paper)" d="M865 396H968C1035 396 1082 435 1082 492 1082 531 1066 557 1043 578 1077 596 1097 624 1097 661 1097 731 1036 773 943 773 876 773 820 751 801 716 788 695 795 670 812 657 829 643 849 648 869 660 897 679 920 689 946 689 979 689 1001 673 1001 649 1001 624 982 623 951 623H908C882 623 863 601 863 574 863 547 882 535 908 535H936C966 535 984 523 989 498H865C835 498 814 477 814 449 814 420 836 396 865 396Z"/>
+    <path id="digit-3-upper-fold" fill="url(#three-upper-fold)" d="M989 498C1023 497 1046 515 1051 541 1054 555 1048 567 1043 578 1015 560 978 546 936 535 967 534 984 520 989 498Z"/>
+    <path id="digit-3-lower-fold" fill="url(#three-lower-fold)" d="M997 638C1008 678 996 718 963 746 945 762 923 772 901 772 926 750 941 721 946 689 977 689 996 673 997 638Z"/>
+  </g>
+
+  <g id="eighth-note-bar">
+    <rect id="bar" x="157" y="807" width="935" height="100" rx="50" fill="url(#bar-fill)"/>
+  </g>
+</svg>
